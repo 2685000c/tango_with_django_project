@@ -11,6 +11,14 @@
         here is the about page. <br />
         <strong>This tutorial has been put together by John.</strong><br />
     </div>
+
+    <div>
+        {% if visits %}
+            Visits: {{ visits }}
+        {% else %}
+            <strong>There have been no visits.</strong>
+        {% endif %}
+    </div>
     
     <div>
         <img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />  
